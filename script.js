@@ -47,3 +47,9 @@ function desbloquearCursos() {
 }
 
 crearMalla();
+
+
+function reiniciarProgreso() {
+  localStorage.removeItem("aprobados");
+  location.reload();
+}

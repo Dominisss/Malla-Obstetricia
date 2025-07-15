@@ -35,3 +35,19 @@ body {
   font-weight: bold;
   margin-top: 2rem;
 }
+
+.reiniciar-btn {
+  background-color: #f8d7da;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 5px #ccc;
+  transition: background-color 0.3s;
+}
+
+.reiniciar-btn:hover {
+  background-color: #f3bfc5;
+}
