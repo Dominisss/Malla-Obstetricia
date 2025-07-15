@@ -17,12 +17,17 @@ body {
   background-color: #f8d7da; /* rosa pastel */
   box-shadow: 0 0 10px #ddd;
   opacity: 0.4;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s, background-color 0.3s;
 }
 
 .course.unlocked {
   opacity: 1;
   cursor: pointer;
+}
+
+.course.aprobado {
+  background-color: #d4edda; /* verde pastel */
+  border: 2px solid #28a745;
 }
 
 .semester-title {

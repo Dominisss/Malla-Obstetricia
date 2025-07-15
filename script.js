@@ -28,12 +28,17 @@ function desbloquearCursos() {
     const curso = courses.find(c => c.id === div.dataset.id);
     const desbloqueado = curso.prerrequisitos.every(pr => aprobados.includes(pr));
 
+    if (aprobados.includes(curso.id)) {
+      div.classList.add("aprobado");
+    }
+
     if (desbloqueado) {
       div.classList.add("unlocked");
       div.onclick = () => {
         if (!aprobados.includes(curso.id)) {
           aprobados.push(curso.id);
           localStorage.setItem("aprobados", JSON.stringify(aprobados));
+          div.classList.add("aprobado");
           location.reload();
         }
       };
