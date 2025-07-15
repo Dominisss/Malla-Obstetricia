@@ -1,0 +1,32 @@
+
+body {
+  font-family: sans-serif;
+  background-color: #fefefe;
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.course {
+  border-radius: 12px;
+  padding: 1rem;
+  background-color: #f8d7da; /* rosa pastel */
+  box-shadow: 0 0 10px #ddd;
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}
+
+.course.unlocked {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.semester-title {
+  grid-column: span 5;
+  font-weight: bold;
+  margin-top: 2rem;
+}
